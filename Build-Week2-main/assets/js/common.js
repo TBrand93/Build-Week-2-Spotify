@@ -151,7 +151,7 @@ function creaPlaylist() {
 	});
 }
 
-const test = "https://striveschool-api.herokuapp.com/api/deezer/album/468634395";
+const test = "https://striveschool-api.herokuapp.com/api/deezer/album/6899610";
 
 const getPlayer = () => {
 	fetch(test)

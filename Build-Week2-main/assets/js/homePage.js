@@ -1,5 +1,7 @@
 
 
+// const test = "https://striveschool-api.herokuapp.com/api/deezer/album/6899610";
+
 const getDisplayJb = () => {
   fetch(test)
     .then((response) => response.json())
@@ -77,14 +79,14 @@ function displayJumbotron(data) {
   `
 }
 
-/*CARDS ALBUM */
+/*CARDS LUNGHINE */
 const cardOrizzontali = [
-  "6039771",
-  "369777387",
-  "429643697",
-  "393159927",
-  "15251913",
-  "123541922",
+  "363906907",
+  "510894151",
+  "52845302",
+  "125887",
+  "226383",
+  "304170",
 ];
 
 function fetchCardOrizzontali() {
@@ -116,20 +118,20 @@ function cardPlaylist(data) {
   rowPlaylist.innerHTML += stampina;
 }
 
-/*CARDS ALBUM ALTE */
+/*CARDS ALTINE */
 const cardVerticali = [
-  "106932762",
-  "92735092",
-  "90897692", 
-  "267432992", 
-  "346381847", 
-  "404614017", 
-  "105007702", 
-  "458124955",
-  "2291858",
-  "78853962", 
-  "458125315",
-  "260307052",
+  "15490684",
+  "510894151",
+  "1262014",
+  "80119962",
+  "109443",
+  "275045842",
+  "102819",
+  "121794132",
+  "7040437",
+  "108564",
+  "72819",
+  "235076292",
 ];
 
 function fetchCardVerticali() {
@@ -175,18 +177,18 @@ function stampaCardVerticali(data) {
 
 /*CARDS ARTISTI */
 const cardArtisti = [
-  "14471", 
-  "1025520", 
-  "1690105", 
-  "9768798", 
-  "69024", 
-  "10734126", 
-  "403699627",
+  "293585",
+  "483",
+  "14585",
+  "3968561",
+  "65682",
+  "1182",
+  "5695",
   "4331",
-  "4496315", 
-  "8849774", 
-  "4617291", 
-  "81315", 
+  "75491",
+  "470538",
+  "892",
+  "75798",
 ];
 
 function fetchCardArtisti() {
@@ -204,7 +206,7 @@ function stampaCardArtisti(data) {
 
   let stampina = `
   
-  <div class="col-xl-2 col-sm-4 mt-1">
+  <div class="col-xl-2 col-sm-4 my-1 ">
   <a href="artista.html?id=${data.id}" class="text-decoration-none">
    <div class="card bg-card-verticali text-white h-100">
     <img
